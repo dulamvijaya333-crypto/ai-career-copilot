@@ -592,7 +592,7 @@ async function analyzeResume() {
   try {
     const userPrompt = `Resume:\n${resume}\n\nJob Description:\n${jobDesc}\n\nProvide your analysis as a JSON object with the exact fields specified.`;
 
-    const response = await fetch(`https://hidden-breeze-58b3.dulamvijaya333.workers.dev/}`, {
+    const response = await fetch(`https://hidden-breeze-58b3.dulamvijaya333.workers.dev/`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
