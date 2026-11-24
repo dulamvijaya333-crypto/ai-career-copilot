@@ -354,20 +354,124 @@ footer a:hover { text-decoration: underline; }
   color: #0c4a6e;
 }
 .tips-box strong { color: #075985; }
-</style>
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 12px 20px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.nav-brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+   header {
+  background: #f6f0e6;
+  color: #1f2a24;
+  padding: 30px 20px;
+}
+
+.top-nav {
+  background: #3f5a49;
+  margin: -30px -20px 35px;
+}
+
+header h1 {
+  color: #1f2a24;
+  font-family: Georgia, serif;
+  font-size: 48px;
+}
+
+header h1 span {
+  color: #3f5a49;
+}
+
+header p {
+  color: #1f2a24;
+  opacity: 1;
+}
+
+header .badge {
+  background: #3f5a49;
+  color: white;
+}
+   .analyze-btn {
+  background: linear-gradient(135deg, #3f5a49, #2f4639);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  box-shadow: 0 5px 12px rgba(63,90,73,0.2);
+}
+.analyze-btn:hover {
+  background: #2f4639;
+}
+   .input-card h3 .icon {
+  background: #cfe0d2 !important;
+  color: #3f5a49;
+   }
+   .input-card {
+  background: #ffffff;
+  border: 1px solid #e4dccd;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(63,90,73,0.10);
+}
+
+textarea {
+  background: #fffdf9;
+  border: 1px solid #e4dccd;
+  border-radius: 14px;
+}
+
+.tips-box {
+  background: #e3ece3;
+  border-radius: 30px;
+  padding: 16px 20px;
+}
+</style>   
 </head>
 <body>
 
-<header>
+<header id="home">
+   <nav class="top-nav">
+  <div class="nav-brand">Vijaya Career Copilot</div>
+  <div class="nav-links">
+    <a href="#home">⌂ Home</a>
+    <a href="#analyze">▥ Analyze</a>
+    <a href="#results">▱ Resources</a>
+    <a href="#results">▦ Career Tools</a>
+  </div>
+</nav>
   <!-- ✏️ CUSTOMIZE: Change your app name here -->
   <h1>Vijaya Career <span>Copilot</span></h1>
   <p>Analyze your resume with AI and get smart career guidance to improve your job opportunities.</p>
   <div class="badge">POWERED BY GEMINI AI</div>
 </header>
 
-<div class="container">
+<div class="container" id="analyze">
 
-  <!-- Input Section -->
+  <!-- Input Section -\u003Cstrong> Pro Tip:\u003C/strong> For best results, paste the \u003Cem>full\u003C/em> resume text (not just a summary) and the \u003Cem>complete\u003C/em> job description. The AI will match keywords, skills, and experience.->
   <div class="input-grid">
     <div class="input-card">
       <h3><span class="icon">📄</span> Your Resume</h3>
