@@ -599,7 +599,8 @@ async function analyzeResume() {
         contents: [{ parts: [{ text: SYSTEM_PROMPT + "\n\n" + userPrompt }] }],
         generationConfig: {
           temperature: 0.3,
-          maxOutputTokens: 2048
+          maxOutputTokens: 2048,
+           responseMimeType: "application/json"
         }
       })
     });
